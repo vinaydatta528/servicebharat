@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic);*/
+* {
+	margin: 0; padding: 0; font-family: 'Source Sans Pro', sans-serif; font-family: 'Open Sans', sans-serif;
+}
+body {
+	font-size:14px; font-family:'Roboto', sans-serif  !important; font-weight: normal;
+	margin:0px 0px; padding:0px 0px; overflow-x:hidden; background-color:#f3f3f3;
+    }
+input, select, textarea, label {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    }
+input:focus, select:focus {
+    outline:none;
+    }   
+select::-ms-expand {
+    display: none;
+    }   
+option {
+    padding:2px 10px; font-size:13px; background-color:#fff; border:none;
+    }   
+a { text-decoration:none; color:#333; display:inline-block;}  
+a:hover, a:active, a:focus { text-decoration:none;}
+:focus, a:focus { outline:none; }
+
+.clear {
+    clear:both;
+    }   
+header {
+	width:100%; background-color:#fff;
+}
+.headTop {
+	width:100%; max-width: 1250px; margin: 0px auto;
+}
+.headTop ul {
+	float: right; margin: 0px; font-family:'Roboto';
+}
+.headTop ul li {
+	list-style-type: none; float: left; padding: 0px; border-left: 1px solid #dedede;
+}
+.headTop ul li:first-child {
+	border:none;
+}
+.headTop ul li a {
+	display:block; font-size: 12px; padding: 5px 15px; font-weight: normal; color: #343434;
+}
+.headTop ul li a:hover {
+	color: #00a388;
+}
+.headerOut {
+	padding: 0px 0px; border-bottom: 2px solid #00a388; border-top: 1px solid #dadada;
+}
+.header {
+	width: 1250px; margin: 0px auto; height: 60px;  position:relative;
+}
+.logo {
+	float: left; font-size: 30px; padding: 9px 0px 0px; text-transform: uppercase; color: #E75C14;
+}
+.logo a {
+	color:#E75C14;
+}
+.logo span {
+	color: #0E933E;
+}
+nav {
+	float:left;
+}
+nav ul {
+	margin: 0px 0px; padding: 20px 0px 0px 50px; text-transform: uppercase;
+}
+nav ul li {
+	list-style-type:none; float:left; font-size:15px; font-weight:500;
+}
+nav ul ul {
+	position:absolute; width: 1250px; margin: 0px auto; left: 0px; text-transform: capitalize; padding: 0px;
+	opacity:0; -webkit-opacity:0; -moz-opacity:0; visibility:hidden; -webkit-visibility:hidden; -moz-visibility:hidden;
+	background-color: #fff; box-shadow: 1px 1px 2px rgba(0,0,0,0.2); z-index: 1000;
+}
+nav ul ul li {
+	width:20%; padding: 10px 20px; background-color: #fff; font-size: 14px;
+}
+nav ul ul li:first-child + li, nav ul ul li:first-child + li + li + li {
+	background-color: #f5f5f5;
+}
+nav ul ul li span {
+	font-weight:600;
+}
+nav ul ul li a {
+	display:block; height: auto; padding: 3px 0px;
+}
+nav ul ul li a:hover {
+	border:none;
+}
+nav ul li:hover ul {
+	opacity:1; -webkit-opacity:1; -moz-opacity:1; visibility:visible; -webkit-visibility:visible; -moz-visibility:visible;
+	}
+nav ul li a {
+	display:block; padding: 0px 20px 0px; height: 42px; margin: 0px 2px;
+}
+nav ul li a:hover, nav ul li a.active, .mAc {
+	color:#0E933E;  border-bottom: 2px solid #E75C14;
+	}
+nav ul li:hover .Act{
+	color:#0E933E;  border-bottom: 2px solid #E75C14;
+	}
+
+.headSearch {
+	float: right; padding: 14px 0px 0px 0px;
+}
+.headSearch input {
+	border:1px solid #dedede; height: 33px; padding: 0px 10px; margin: 0px 0px; font-size: 14px; font-weight: 500;
+	color: #666; width: 150px; float: left; border-radius: 2px 0px 0px 2px;
+	-webkit-transition:0.2s all; -moz-transition:0.2s all; transition:0.2s all;
+}
+.headSearch input:focus {
+	width:260px; border:1px solid #00a388;
+}
+.headSearch button {
+	border:1px solid #018670; height: 33px; padding: 0px 0px; margin: 0px 0px; font-size: 18px; font-weight: 400;
+	color: #fff; float: left; border-radius: 0px 2px 2px 0px; width: 50px; background-color: #00a388;
+}
+.headSearch button:hover {
+	background-color: #018670;
+}
+.cart {
+	float:right; height: 33px; margin: 14px 5px 0px 15px; padding: 5px 12px; background-color: #e75c14; color: #fff;
+	border: 1px solid #c54706; border-radius:2px; cursor: pointer; position: relative;
+}
+.cart i {
+	font-size:20px; display: inline-block; padding: 0px 35px 0px 0px;
+}
+.cart span {
+	display: inline-block; padding: 1px 5px 0px; background-color: #c54706; font-size: 15px; border-radius: 2px; position: absolute;
+	right: 10px; top: 4px; height: 23px;
+}
+.themeWrap {
+	width:1250px; margin: 10px auto;
+}
+.themeLeft {
+	width: 70%; background-color: #fff; min-height: 420px; float: left; box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+}
+.themeRight {
+	width: 29%; min-height: 420px; float: right;
+}
+.themeCta {
+	background-color: #fff; box-shadow: 0px 0px 2px rgba(0,0,0,0.1); margin-bottom: 10px; min-height: 133px;
+	border-radius: 2px; max-height: 133px; position: relative; overflow: hidden;
+}
+.themeCta img {
+	width:100%; border-radius: 2px;
+}
+.whyChOut {
+	width: 100%; background-color: #fff; padding: 50px 0px;
+}
+.whyChOut h2 {
+	text-align:center; background: url(../images/line-bg.jpg) repeat-x center;
+}
+.whyChOut h2 span {
+	display: inline-block; padding: 0px 35px; font-size: 28px; font-weight: 300; text-transform: uppercase; color: #454545;
+	background-color: #fff; border-left: 2px solid #ff6600; border-right: 2px solid #ff6600; border-radius: 6px;
+}
+.whyCh {
+	width:1250px; margin: 0px auto;
+}
+.whyChCta {
+	float:left; width: 25%; text-align: center; padding: 40px 30px 0px;
+}
+.whyChCta i {
+	font-size:100px; color: #DBDBDB;
+}
+.whyChCta h3 {
+	font-size:18px; color: #666; padding: 10px 0px; border-bottom: 1px dotted #ddd; margin: 0px auto; width: 80%;
+}
+.whyChCta p {
+	font-size:14px; color: #666; padding: 5px 0px 0px 0px; margin: 0px auto; width: 90%; line-height: 23px;
+}
+
+.homTestWrap {
+	width:100%; background-color: #33435B; min-height: 400px;
+}
+.homTestImg {
+	width: 50%; float: left; background-color: #7F7F7F;
+}
+.homTestInn {
+	width: 50%; float: left; background-color: #33435B;
+}
+.parWrap {
+	width: 100%; background-color: #f1f1f1; padding: 50px 0px;
+}
+.parWrap h2 {
+	text-align:center; background: url(../images/line-bg.jpg) repeat-x center;
+}
+.parWrap h2 span {
+	display: inline-block; padding: 0px 35px; font-size: 28px; font-weight: 300; text-transform: uppercase; color: #454545;
+	background-color: #f1f1f1; border-left: 2px solid #ff6600; border-right: 2px solid #ff6600; border-radius: 6px;
+}
+
+
+.liquid {
+	padding:30px 0px 0px 0px; margin: 0px auto; position: relative; width: 1250px;
+}
+.liquid .wrapper {
+	width:100% !important; padding: 0px 0px 0px 30px !important;
+}
+.liquid .previous {
+	display:block; position: absolute; left: -5px; padding: 2px; font-size: 23px;margin: 0px 5px; color: #368ee0;
+	cursor: pointer; top: 48%;
+}
+.liquid .next {
+	display:block; position: absolute; right: -5px; padding: 2px; font-size: 23px;margin: 0px 5px; color: #368ee0;
+	cursor: pointer; top: 48%;
+}
+.liquid ul li {
+	width:275px; background-color: #fff; padding:0px; text-align: center; margin:5px 10px; box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+.liquid ul li img {
+	width:auto; max-width: 90%; padding: 8px 0px;
+}
+
+
+/*   Footer   */
+
+.footer {
+	background-color: #222; background-image: url(../images/foot-bg.png); background-repeat: repeat-x; background-position: bottom left;
+}
+.footInn {
+	width:1250px; margin: 0px auto; padding: 30px 0px 70px;
+}
+.FootCta {
+	float:left; width: 25%; padding: 0px 0px 0px 3%;
+}
+.FootCta li {
+	font-size: 14px;
+}
+.FootCta h2 {
+	color:#949494; font-size: 15px; font-weight: 500; text-transform: uppercase; padding: 0px 0px 5px 0px; border-bottom: 1px solid #666;
+	margin: 0px 0px 10px 0px; width: 180px;
+}
+.FootCta h2:hover {
+	color:#fff;
+}
+.FootCta li a {
+	color:#B9B9B9; padding: 3px; display: inline-block;
+}
+.FootCta li a:hover {
+	color:#fff;
+}
+.copyOut {
+	background-color:#121212; border-top: 1px solid #454545; padding: 15px; text-align: center; color: #999;
+}
+.copyOut p {
+	padding:0px 0px; margin: 0px 0px; font-size: 14px;
+}
+.copyOut span {
+	display: block; padding: 8px 0px 0px;
+}
+.copyOut span a {
+	display: inline-block; margin: 3px 3px 0px; width: 30px; height: 30px; line-height: 28px; color: #dddddd; border: 1px solid #999999;
+	background: #1b1b1b; font-size: 13px;
+	}
+.copyOut span a:hover {
+	background-color:#E75C14; color: #fff;
+}
+
+
+/*   Cars Css  */
+
+
+.carsThemOut {
+	position:relative; overflow: hidden; width: 100%;
+	background: #d6edff;
+    background: -webkit-linear-gradient(top, #b3d8f5 0%, #bfe3ff 100%);
+    background: -linear-gradient(top, #d6edff 0%, #bfe3ff 100%);
+    background: -moz-linear-gradient(top, #d6edff 0%, #bfe3ff 100%);
+}
+.carsThem {
+	width: 1250px; margin: 0px auto; position: relative; z-index: 100; padding: 0px 0px 40px 0px;
+}
+.carsThem h2 {
+	font-size:26px; padding: 30px 0px 0px 20px; font-weight: 400; color: #333a38;
+}
+.carsThem img {
+	width: 100%;
+}
+.carsSeaWrap {
+	width: 1250px; margin: 0px auto; position: relative; z-index: 100; padding: 40px 0px 0px 0px;
+}
+.carsSea {
+	width: 92%; margin: 0px auto; background-color:rgba(255,255,255,0.8); padding: 15px 20px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.3); border-radius: 5px;
+}
+.carsSea strong {
+	float:left;  padding: 0px 80px 0px 0px; display: block; font-size: 20px; font-weight: 400; color: #666;
+}
+.carCheck {
+	float:left;
+}
+.radio {
+  position: relative; float: left; display: block; padding: 2px 20px 0px 40px; line-height: 22px;
+  font-size: 16px; color: #666; cursor: pointer; margin: 0px 20px 0px 0px;
+}
+.radio:before {
+  background: #fff; content: ""; position: absolute; display: inline-block; top: 2px; left: 0; width: 22px; height: 22px;
+  border: 1px solid #bbb; border-radius: 100%; box-shadow: inset 0 0 3px 0 #ccc;
+}
+.carCheck input[type="radio"] {
+  display: none;
+} 
+.carCheck input[type="radio"]:checked + label:before {
+  content: "\2022"; text-align: center; line-height: 15px; font-family: Tahoma; font-size: 44px; color: #0E933E; text-shadow: 0 0 4px #bbb;
+}
+.carFlds {
+	width: 100%; display: block;
+}
+.carFlds span {
+	float: left; width: 23%; display: block; padding: 15px 0px;
+}
+.carFlds span.carBtn {
+	width:8%;
+}
+.carFlds label{
+	display: block; font-size: 14px; font-weight: 400; color: #666; padding: 0px 0px 3px 0px;
+}
+.carFlds input {
+	width:94%; height: 35px; padding: 0px 10px; font-size: 14px; font-weight: 500; color: #454545;
+	border: 1px solid #bdbdbd; border-radius: 3px;
+}
+.carFlds select {
+	width: 94%; height: 35px; padding: 0px 10px; -webkit-appearance: none; -moz-appearance:none; appearance:none;
+	border: 1px solid #bdbdbd; border-radius: 3px; background-image: url(../images/sele-arrow.png); background-repeat: no-repeat;
+	background-position: 95% center; background-size: 10px; font-size: 14px; font-weight: 500; color: #454545;
+}
+.carBtn input {
+	width: 100%; background-color: #0e933e; border: 1px solid #07722e; font-size: 16px; font-weight: 600; color: #fff;
+}
+.carFlds input:focus, .carFlds select:focus {
+	border: 1px solid #47c073; 
+}
+.carBtn input:focus, .carBtn input:hover {
+	border: 1px solid #07722e;  background-color: #07722e;
+}
+.brandOut {
+	width: 100%; background-color: #fff; padding: 50px 0px;
+}
+.brandOut h2 {
+	text-align:center; background: url(../images/line-bg.jpg) repeat-x center;
+}
+.brandOut h2 span {
+	display: inline-block; padding: 0px 35px; font-size: 28px; font-weight: 300; text-transform: uppercase; color: #454545;
+	background-color: #fff; border-left: 2px solid #ff6600; border-right: 2px solid #ff6600; border-radius: 6px;
+}
+.brandInn {
+	width: 1250px; margin: 20px auto 0px; position: relative; 
+}
+.brandInn a {
+	float: left; width: 18%; background-color: #fff; margin: 1%; text-align: center; box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+	border-radius: 3px; min-height: 100px; cursor: pointer; -webkit-transition: 0.2s all; -moz-transition: 0.2s all;
+	transition: 0.2s all; padding: 15px 0px 0px 0px; position: relative;
+}
+.brandInn img {
+	max-width: 40%; max-height: 42px; width: auto;
+}
+.brandInn span {
+	display:block; font-size: 13px; padding: 10px 0px 0px 0px;
+}
+.brandInn a:hover {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.CarPro {
+	background-color: #f1f1f1;
+}
+.CarPro h2 span {
+	background-color: #f1f1f1;
+}
+.CarPro img {
+	width:130px; padding: 0px 0px 10px 0px;
+}
+.CarPro b {
+	display:block; font-size: 18px;
+}
+.houPro {
+	background-color: #f1f1f1;
+}
+.houPro h2 span {
+	background-color: #f1f1f1;
+}
+.houPro img {
+	width:110px; padding: 0px 0px 10px 0px;
+}
+.houPro b {
+	display:block; font-size: 18px;
+}
+
+.locaWrap img {
+	max-width: 110px; width: auto; max-height: inherit;
+}
+.locaWrap span {
+	padding-bottom: 16px;
+}
+
+.houTheOut {}
+.houTheOut .carFlds span {
+	float: left; width: 30%; display: block; padding: 15px 0px;
+}
+.houTheOut .carFlds span.carBtn {
+	 width: 10%;
+}
+.houseBann {
+	width:100%; background: url(../images/hous-banner.png) repeat-x bottom center; height: 260px; background-size: 90%;
+	padding: 50px 0px 0px 0px;
+}
+.carRoadBg {
+	width: 6666px; background: url(../images/cars-bg.png) repeat-x bottom center; height: 260px; position: relative;
+	padding: 50px 0px 0px 0px;  transform: translate3d(0, 0, 0); animation: moveSlideshow 30s linear infinite;
+}
+.car1 {
+	position:absolute; left: 10%; bottom: 20px; width: 200px;
+}
+.car2 {
+	position:absolute; right: 30%; bottom: 20px; width: 200px;
+}
+.car1 img, .car2 img  {
+	width:100%;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+
+
+.postAdWrap {
+	position:absolute; bottom: -65px; right: 4%; font-size: 14px; text-align: center; padding: 0px 20px;
+}
+.postAdWrap p {
+	padding:5px 0px;
+}
+.postAdWrap a {
+	background-color: #009587; color: #FFF; border: 1px solid #008578; width: 100%; display: block; border-radius: 3px;
+	padding: 6px 0px;
+}
+
+
+.elecWrapOut {
+	width:100%; background-color: #f1f1f1; min-height: 500px;
+}
+.elecTheme {
+	width:1250px; margin: 0px auto;
+}
+.elecThemeCta {
+	width:32.333%; margin: 1% 0.5%; background-color: #fff; min-height: 150px; border-radius: 3px; box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+	float: left;
+}
+
+.eleBrands {
+	width:1240px; margin: 10px auto; box-shadow: 0px 0px 2px rgba(0,0,0,0.1); background-color: #fff; min-height: 200px;
+	border-radius: 3px;
+}
+.eleBrandsHead {
+	border-bottom:1px solid #ccc;
+}
+
+
+/*   Back to top  */
+.backtotop {
+    width:50px; position:fixed; bottom:20px; right:15px; cursor:pointer; display: none; outline:none !important; z-index:30; text-align:center;
+    animation:bounce 1s infinite; -webkit-animation:bounce 1s infinite; -moz-animation:bounce 1s infinite;
+}
+.backtotop img { width:90%; padding:5% 0px 0px 0px;}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}

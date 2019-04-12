@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0;
+  }
+.rslides li {
+  -webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0;
+  opacity: 0; z-index: 1; transition: opacity 5000ms ease-in-out;
+  }
+.rslides li:first-child {
+  position: relative; display: block; float: left;
+  opacity: 1; z-index: 2; transition: opacity 5000ms ease-in-out;
+  }
+.rslides img {
+  display: block; height: auto; width: 100%; border: 0;
+  }
+.rslides_container {
+  position: relative; width: 100%;
+  }
+.rslides span {
+	width:1150px; margin: 0px auto; position: absolute; left: 0px; top: 0px; display: block; right: 0px;
+	padding: 10% 10px 0px 45%;
+}
+.rslides span.two {
+	padding: 10% 45% 0px 10px;
+}
+.rslides span h2 {
+	padding:0px 0px; margin: 0px 0px; font-size: 40px; font-weight: 300; color: #fff; font-family: 'Arima Madurai';
+	line-height: 55px;
+}
+.rslides span p {
+	padding:20px 0px; margin: 0px 0px; font-size: 20px; font-weight: 400; color: #fff; font-family: 'Arima Madurai';
+}
+.rslides span a {
+	display:inline-block; padding: 8px 20px; border: 1px solid #fff; text-transform: uppercase;
+	font-size: 14px; font-weight: 400; color: #fff; border-radius: 3px; transition: 0.2s all; -webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+}
+.rslides span a:hover {
+	background-color:rgba(255,255,255,0.18);
+}
+.centered-btns_nav {
+  z-index: 300; position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); border-radius: 2px;
+  top: 50%; left: 2px; overflow: hidden; text-decoration: none; height: 45px; text-align: center;
+  width: 35px; margin-top: -45px; background-color: rgba(0,0,0,0.5); display: inline-block; color: rgba(255,255,255,0.6);
+  }
+.centered-btns_nav i {
+	font-size:40px; display: inline-block; padding: 1px 0px 0px 0px;
+}
+.centered-btns_nav:hover, .centered-btns_nav:focus {
+	color: rgba(255,255,255,0.6);
+}
+.centered-btns_nav:active {
+  background-color: rgba(0,0,0,0.8); color: rgba(255,255,255,1);
+  }
+
+.centered-btns_nav.next {
+  left: auto; background-position: right top; right: 2px;
+  }
+
+.transparent-btns_nav {
+  z-index: 3; position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); top: 0; left: 0;
+  display: block; background: #fff; opacity: 0; filter: alpha(opacity=1); width: 48%;
+  overflow: hidden; height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3; position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); opacity: 0.6;
+  overflow: hidden; top: 0; bottom: 0; left: 0; background: #000 url("themes.gif") no-repeat left 50%; width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto; background-position: right 50%; right: 0;
+  }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px; position: absolute; bottom: 10px; z-index: 100; width: 100px; margin: 0px auto; left: 0px; right: 0px;
+  text-align: center;
+  }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline; float: none; margin-right: 10px;
+  }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px; overflow: hidden; -webkit-border-radius: 15px; -moz-border-radius: 15px;
+  border-radius: 15px; background: #ccc; background: rgba(0,0,0, .2); display: inline-block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.5); -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.5);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.5); width: 15px; height: 15px;
+  }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222; background: rgba(255,255,255, 1);
+  }
+
+
+
+/*   Cars Cloud Animation   */
+
+.clouds{
+	position: absolute; left: 0px; top: 0px;
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+    width: 200px; height: 60px;
+    background: #fff;
+    
+    border-radius: 200px;
+    
+    position: relative; 
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; top: -15px; left: 10px;
+    
+    border-radius: 100px;
+    
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);     transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+    left: 200px;
+    
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; /*opacity proportional to the size*/
+    
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+    left: -250px; top: -200px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+    left: 470px; top: -250px;
+    
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+    left: -150px; top: -150px;
+    
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.6; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+
+
+/*   Carocel   */
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative; max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative; width:99999px; margin:0px; padding:0px; list-style-type:none; text-align:center; overflow: auto;
+}
+.nbs-flexisel-inner {
+    position: relative; overflow: hidden; float:left; width:100%; background:#fff; border-radius:3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+.nbs-flexisel-item {
+    float:left; margin:0px; padding:0px; cursor:pointer; position:relative; line-height:0px;
+}
+.nbs-flexisel-item img {
+    max-width: 100%; cursor: pointer; position: relative; margin-top: 10px; margin-bottom: 10px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    padding:5px 10px; border-radius:15px;   position: absolute; cursor: pointer; z-index: 4; top: 50%;
+    transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff;     
+}
+.nbs-flexisel-nav-left {
+    left: 10px;
+}
+.nbs-flexisel-nav-left:before {
+    content: "<"
+}
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}
+.nbs-flexisel-nav-right {
+    right: 5px;    
+}
+.nbs-flexisel-nav-right:before {
+    content: ">"
+}
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
+.branCar {
+	width:1250px; margin: 0px auto 15px;
+}
+
+.prodCar {
+	width:1250px; margin: 0px auto 15px;
+}
+
